@@ -59,7 +59,7 @@ st.write('Region', rg )
 bt = st.button('Show Insured Price')
 
 if bt:
-    model = load_model('../md_insure/random.pk')
+    model = load_model('random.h5')
     input_data = (age,sex,bmi,hd,smoker,region)
     input_data_as_numpy_array = np.array(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
